@@ -16,8 +16,8 @@ Compare products side by side -- only real, published, publicly visible products
 
 HDWebmobile Product Comparison lets shoppers add products to a comparison list from the shop or a product page, then view them side by side with the `[hdcmp_compare]` shortcode.
 
-= Why this plugin exists =
-Several competing product-comparison plugins accepted a product id from a request or a stored list and rendered whatever post existed at that id, without re-checking it was still a real, published, publicly visible WooCommerce product (CWE-862 / CWE-200, broken access control leading to information disclosure). That let a comparison request surface a draft, a trashed post, or a product deliberately hidden from the catalog -- and in the worst cases, a completely unrelated post type.
+= Security by design =
+A common weakness in product-comparison tools is accepting a product id from a request or a stored list and rendering whatever post exists at that id, without re-checking it is still a real, published, publicly visible WooCommerce product (CWE-862 / CWE-200, broken access control leading to information disclosure). That lets a comparison request surface a draft, a trashed post, or a product deliberately hidden from the catalog -- and in the worst cases, a completely unrelated post type.
 
 This plugin re-validates every stored product id, every single time the list is read, rather than trusting whatever is already sitting in the cookie or account:
 
