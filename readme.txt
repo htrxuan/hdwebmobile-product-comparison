@@ -34,6 +34,9 @@ This plugin re-validates every stored product id, every single time the list is 
 * Compares name, image, and price only in this version -- no custom attribute rows
 * No AJAX "compare" widget/popup -- the toggle link and shortcode table are plain page content
 
+= Enjoying this plugin? =
+If it helps your site, please consider [leaving an honest review on WordPress.org](https://wordpress.org/support/plugin/hdwebmobile-product-comparison/reviews/#new-post) -- it helps other WordPress users find it. Found a problem or have an idea? Please [open a support topic](https://wordpress.org/support/plugin/hdwebmobile-product-comparison/) first so it can be fixed.
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/hdwebmobile-product-comparison` directory, or install the plugin through the WordPress plugins screen directly.
